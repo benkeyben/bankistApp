@@ -82,3 +82,18 @@ If you want to see more information about a particular remote, you can use the
 => git remote show origin
 => git remote show bkbBankist
 
+TAGGING
+1. To list existing tags
+   => git tag
+
+2. If you're interested only in looking at the 1.8.5 series
+   you can run 
+   => git tag -l "v1.8.5*"
+
+3. Creating annotated tags
+   => git tag -a v1.00 -m "my version 1.00"
+
+4. You can see the tag data along with the commit that
+   was tagged by using the git show command
+   => git show v1.00
+
