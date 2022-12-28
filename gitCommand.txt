@@ -59,4 +59,21 @@ to add to this commit, you can do something like this:
 => git add forgotten_file
 => git commit --amend
 
+HOW TO ADD A FILE TO .gitignore
+=> echo mylogfile.log >> .gitignore
+=> git rm -r -f --cached mylogfile
+=> git add .
+=> git commit -m "Removed mylogfile"
+
+TO REMOVE A FILE BEFORE push
+=> git rm --cached index.js
+
+REMOVING A FILE ADDED IN THE MOST RECENT UNPUSHED commit
+If the file waws added with your most recent commit and you have not pushed to github, you can delete the file and amend commit
+=> git rm --cached index.js
+=> git commit --amend -HEAD 
+
+To add a new remote Git repository as a shortname you can reference easily, run 
+=> git remote add <shortname> <url>
+=> git remote add bkb https://github.com/benkeyben/bankistApp.git
 
