@@ -8,13 +8,18 @@ https//github.com/benkeyben
 => git config user.email
 => git help <verb>
 => git <verb> --help
+=> git diff #It doesnt show all changes made since your 
+   last commit -- only changes that are still unstaged.
+=>  git diff --cached / git diff --staged
+=> git commit -a -m 'Add new benchmarks'
+=> git mv file_from file_to # Renaming file in git
+=> git rm --cached README
+=> git commit --amend
 => git clone https://github.com/benkeyben/bankistApp.git
 =>           https://github.com/username/directoryName
 =>https://github.com/username/directoryName NewDirectoryName
-
 => git status -s
-
-             
+=> https://github.com/github/gitignore i   
 
 => …or create a new repository on the command line
     echo "# bankistApp" >> README.md
@@ -46,6 +51,12 @@ https//github.com/benkeyben
    can use the
    git config --list
 
-5. 
+5. Setting upp a .gitignore file for your new repositor before you get going is generally a good idea so you don't accidentally commit files that you really don't  want in your Git repository.
+
+6. As an example, if you commit and then realize you forgot to stage the changes in a file you wanted
+to add to this commit, you can do something like this:
+=> git commit -m 'Initial commit'
+=> git add forgotten_file
+=> git commit --amend
 
 
