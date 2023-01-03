@@ -1,5 +1,5 @@
 # Ignore all javaScript files ending in .js
-*.js
+
 
 # Ignore environment files
 *.environment
